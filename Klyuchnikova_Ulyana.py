@@ -30,11 +30,11 @@ def return_sum(a: int, b: int):
 @mirror_inputs
 def order_strings(f_str: str, s_str: str):
     """на вход две строки, переворачивает их и печетает в отсортированном виде"""
-    return sorted([f_str, s_str])
+    print(*sorted([f_str, s_str]))
 
 
 if __name__ == "__main__":
     print(return_sum(123, 567))
     print(return_sum(123, b = 567))
-    print(order_strings("abc", "cde"))
-    print(order_strings("abc", s_str = "cde"))
+    order_strings("abc", "cde")
+    order_strings("abc", s_str = "cde")
