@@ -7,6 +7,7 @@ def time_counting(f):
         result = f(*args)
         print(time.time() - start)
         return result
+
     return wrapper
 
 
@@ -17,4 +18,4 @@ def my_sum(x, y):
 
 @time_counting
 def my_pow(x, y):
-    return x**y
+    return x ** y
