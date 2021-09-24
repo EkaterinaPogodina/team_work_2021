@@ -1,4 +1,7 @@
 def Valid(f, numbers):
+    if len(numbers) == 0:
+        print('Wrong data')
+        return None
     for number in numbers:
         if type(number) != int and type(number) != float:
             print('Wrong data')
