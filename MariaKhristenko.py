@@ -1,10 +1,10 @@
 from datetime import datetime
 
 
-def print_function(f):
+def print_function(func):
     def function_wrapper(*args):
         print(datetime.now())
-        output = f(*args)
+        output = func(*args)
         print(datetime.now())
         return output
     return function_wrapper
