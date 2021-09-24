@@ -15,9 +15,9 @@ def numbers(obj_1, obj_2):
 @decor
 def strings(obj_1, obj_2):
     if obj_1 >= obj_2:
-        return [obj_2, obj_1]
+        return obj_2, obj_1
     else:
-        return [obj_1, obj_2]
+        return obj_1, obj_2
 
 
 obj_1 = input()
