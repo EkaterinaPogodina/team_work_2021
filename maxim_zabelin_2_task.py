@@ -14,7 +14,7 @@ def concatenate_strings(string_1, string_2):
 @to_upper
 def delete_all_vowels(string):
     res = ''
-    vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+    vowels = ['a', 'e', 'i', 'o', 'u', 'y',  'A', 'E', 'I', 'O', 'U', 'Y']
     for char in string:
         if char not in vowels:
             res += char
