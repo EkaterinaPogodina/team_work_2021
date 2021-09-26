@@ -6,7 +6,13 @@ def main_function(f):
         start_time = time.time()
         ans = f(x, y)
         end_time = time.time()
-        print(start_time - end_time)
+        run_time = end_time - start_time
+        a = ['секунд', 'миллисекунд', 'микросекунд']
+        s = ''
+        for i in range(3):
+            s += str(int(run_time)) + " " + a[i] + " "
+            run_time = (run_time % 1) * 1000
+        print(s)
         return ans
 
     return wrapper
