@@ -8,12 +8,7 @@ def to_upper(func):
 
 @to_upper
 def concatenate_strings(string_1, string_2):
-    string_1 += string_2
-    all_chars = []
-    for char in string_1:
-        all_chars.append(char)
-    res = ''.join(sorted(all_chars))
-    return res
+    return string_1 + string_2
 
 
 @to_upper
