@@ -23,7 +23,7 @@ def consonants_from(some_list):
 
 @filtering
 def long_words_from(some_list):
-    """ printing all the words with length equals 5 or more """
+    """ printing all the words with length equals 6 or more """
     for word in some_list:
         if len(word) > 5:
             print(word, end=' ')
