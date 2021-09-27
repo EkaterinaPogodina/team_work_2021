@@ -25,4 +25,4 @@ def summa(x, y):
 
 @main_function
 def stepen(x, y):
-    return x ** y
+    return (x ** y)
